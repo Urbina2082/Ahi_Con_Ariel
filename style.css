@@ -1,0 +1,743 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1920px;
+}
+
+/* --------------VARIABLES---------------- */
+:root {
+  /* ----------COLORES PRIMARIOS----------------- */
+  --colorAmarillo: #dbba27;
+  --primaryKey: #f9f61c;
+  --secundaryKey: #49c807;
+
+  /* -----------TEXTO----------- */
+  --Tamañotexto_p: 120%;
+}
+
+/* asi se una una variable en css  /  color: --var(colorAmarillo); */
+
+/* ----------Inicio----------------- */
+
+header {
+  
+  height: 100dvh;
+  background-image: linear-gradient(#000000ce,#000000ce),url(/img/fono_2.webp
+  
+  ) ;
+  /* background: #0e3102; */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.menu {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu img {
+  width: 19rem;
+  margin: 0rem 8rem;
+}
+.menu nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.menu nav ul li a{
+  text-decoration: none;
+
+}
+
+.menu nav ul li{
+  background: #09090900;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: #ffffff;
+  font-weight: 550;
+ list-style:none;
+}
+
+.infos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ flex-direction: column;
+  margin: 3rem 1rem 0rem ;
+  gap: 2rem;
+}
+
+.infos .sec1{
+display: flex;
+
+gap: 1rem;
+}
+.infos  .sec1 img{
+  width: 32px;
+}
+
+.infos .sec1 a{
+  background: #ffffff00;
+  filter: invert(5);
+  border-radius: 50%;
+  padding: .7rem .7rem .5rem .7rem;
+}
+
+.infos .sec2{
+width: 70%;
+color:#ffffff;
+}
+
+.infos .sec2 h2{
+font-size: clamp(2rem,4vw,4.5rem);
+color: #fbdf1c;
+}
+
+.infos .sec2 p{
+  margin: 2rem auto;
+  font-size:  clamp(1.1rem,1vw,2.5rem);
+  color:#ffffff;
+  width: 60%;
+  
+}
+
+.infos .sec3 img{
+  width:22rem;
+  height: 20rem;
+  
+}
+
+ header button{
+  margin: 0rem .5rem;
+padding: .6rem 1rem;
+background:#01783a;
+color: #ffffff;
+font-size: 1.1rem;
+border: #00000000;
+border-radius: .5rem;
+}
+/* ----------------Horarios----------------- */
+
+.borde{
+  /* background:#01783a ; */
+  border-radius: 2rem;
+  padding: .5rem  ;
+ 
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.horario {
+     background-image: linear-gradient(#0000009c,#0000009c),url(/img/asd.webp) ;
+     background-position: center;
+     background-size: cover;
+    border: #fbdd1c00 5px solid;
+  padding: 2rem 2rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  width: 80%;
+ color: #ffffff; 
+ display: flex;
+ justify-content: center;
+ text-align: center;
+  gap: 2rem;
+}
+
+.horario h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.horario p {
+  margin: 1rem 0rem;
+ 
+}
+
+.horario p a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.horario .sec_1{
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+width: 50%;
+font-size: 1.7rem;
+padding: 1rem;
+border: #ffffffce 5px solid;
+}
+
+.horario .sec_2{
+  width: 50%;
+}
+
+.horario .sec_2 img {
+  width:100%;
+  border-radius: .5rem;
+}
+
+.horario .sub_as1{
+  display: flex;
+justify-content: center;
+gap: 2rem;
+}
+
+ .sub_as1 .subss_as1{
+  width: 60%;
+  font-size: 1rem;
+}
+
+.sub_as1 .subss_as2{
+ font-size: 1rem;
+ color: #fff;
+}
+
+
+
+/* ---------------DESCUBRE------------- */
+
+.Descubre {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.Descubre h3 {
+  color: #e9cd1bc7;
+  width: 70%;
+  margin: 5rem auto 0rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  /* color: var(--primaryKey); */
+}
+
+.Descubre p {
+  color: #a08b04;
+  width: 60%;
+  margin: 1rem auto;
+  /* font-size: var(--Tamañotexto_p); */
+}
+
+.Descubre p span {
+  font-weight: 600;
+  color: #a08c0e;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin: 6rem 0rem;
+}
+
+.cardista {
+  background: #ffffffaf;
+  text-align: left;
+  width: 19rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: #01783bb0 2px 5px 5px 5px;
+  /* color: #0e3102; box-shadow: #00000033 5px 5px 5px 5px; */
+  color: #01783a;
+}
+
+.lat_buff {
+  height: 0.2rem;
+  width: 15rem;
+  background: #01783a;
+  margin: 0.8rem 0rem;
+}
+
+.margen {
+  /* padding: 1rem; */
+  /* border: #0e3102d8 3px solid; */
+  border-radius: 1rem;
+}
+
+.cardista p {
+  color: #b19a05;
+  width: 90%;
+  margin: 1rem 0rem;
+  position: relative;
+}
+
+.cardista ul {
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+.cardista ul li {
+  font-size: 0.9rem;
+  margin: 0.3rem 0rem;
+}
+
+.cardista img {
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 0.8rem 0.8rem;
+}
+
+.cardista h4 {
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  margin: 7% 0rem 0rem;
+  font-weight: 800;
+  
+}
+
+ .Descubre button{
+  margin: 0rem .5rem;
+padding: .6rem 2rem;
+background:#01783a;
+color: #ffffff;
+font-size: 1.1rem;
+border: #00000000;
+border-radius: .5rem;
+}
+
+/* -----------Alina----------- */
+
+.Fernandes_Postres{
+  margin: 10rem 0rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 5rem;
+background: #d3217a11;
+padding: 4rem 0rem;
+}
+
+.Fernandes_Postres .sec_1 img{
+  width: 15rem;
+  border-radius: 50%;
+}
+.Fernandes_Postres .sec_1{
+  width: 15rem;
+  text-align: center;
+  color: #780115b7;
+}
+
+.Fernandes_Postres .sec_2{
+  display:grid;
+ grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.Fernandes_Postres .sec_2  img {
+  width: 8rem;
+  height: 6rem;
+
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.Fernandes_Postres .sec_3 a{
+  margin: 0rem 1rem;
+}
+.Fernandes_Postres .sec_3{
+   color: #780115b7;
+  text-align: center;
+}
+
+.Fernandes_Postres #look{
+  filter:invert(5);
+}
+
+
+/* -------------MENU---------------- */
+
+.mnus_img{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+.mnus_img img{
+  border-radius: 1rem;
+}
+
+.inf_menu {
+  text-align: center;
+  color: #28680c;
+  width: 60%;
+  margin: auto;
+  padding: 4rem 0rem 7rem;
+}
+
+ .inf_menu h3 {
+  font-size: 8rem;
+  margin: auto;
+  color: #28680c;
+}
+
+
+/* --------CUADRILLAS----------- */
+
+.klkl h3 {
+  font-size: clamp(2.8rem, 4vw, 2rem);
+  text-align: center;
+  color: #23580f;
+  margin: 5rem 0rem 0rem;
+}
+
+.cuadrllas {
+  margin: 2rem 0rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadrllas .cuadr_1 {
+  padding: 1.3rem;
+  background: #b6a509;
+  color: #000000;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  width: 16rem;
+  height: 2rem;
+  text-align: center;
+  border: 0.5px solid #000;
+  font-weight: 600;
+}
+
+#cuadr_2 {
+  background: #28680c;
+  color: #ffffff;
+}
+
+/* ---------Reconocimiento-------- */
+
+.Reconocimiento {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.Reconocimiento img {
+  width: 30rem;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px #00000042;
+}
+
+.Reconocimiento .punt_2 {
+  width: 40%;
+}
+
+.Reconocimiento h5 {
+  margin: 1rem 0rem;
+  font-size: 150%;
+  color:#01783a;
+}
+
+.Reconocimiento .punt_2 p {
+  color: #4e4e4ebe;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.Reconocimiento .sub_1 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Reconocimiento .sub_1 img {
+  width: 9rem;
+  height: 8vh;
+  box-shadow: none;
+  opacity: 50%;
+}
+
+/* -----------CONTACTO----------------- */
+
+.Contacto {
+  background:#01783a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 5rem;
+  margin: 10rem 2rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+.Contacto p {
+  margin: 1rem 0rem;
+  font-size: 1.2rem;
+}
+
+.Contacto .redes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.redes a {
+  width: 4rem;
+  text-align: center;
+}
+
+.Contacto a {
+  filter: invert(5);
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+.cont_1 {
+  width: 40%;
+}
+
+.cont_1 h5 {
+  font-size: 2.8rem;
+ color: #fbdf1c;
+}
+
+.cont_2 {
+  width: 35rem;
+}
+
+.cont_2 img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px #fbdd1c34;
+}
+
+/* ------------FOOTER------------ */
+
+footer {
+  /* background: #adadad; */
+ color:#01783a;
+}
+.marter {
+  height: 0.4rem;
+  background:#01783a;
+  border-radius: 2rem;
+  margin: 0rem 2rem;
+}
+
+footer h6 {
+  font-size: 1.2rem;
+}
+
+footer .Alt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 3rem 5rem;
+
+}
+
+.abaj p {
+  padding: 1.5rem 0rem;
+  text-align: center;
+}
+
+.fot2 {
+  display: flex;
+  gap: 1.5rem;
+ 
+  filter: brightness(0) saturate(100%) invert(32%) sepia(77%) saturate(394%) hue-rotate(99deg) brightness(96%) contrast(92%);
+
+}
+
+@media only screen and (max-width: 500px) {
+
+.mnus_img{
+  width: 90%
+}
+
+  .Guisos_medio {
+    width: 100%;
+  }
+
+.infos .sec2{
+width: 100%;
+
+}
+.menu img {
+    width: 12rem;
+    margin: auto;
+}
+
+.infos {
+    margin: 2rem 1rem 0rem; 
+    text-align: center;
+}
+
+.infos .sec1 {
+    gap: .5rem;
+}
+  .precios_litros .precii {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu ul li {
+    display: none;
+  }
+  .menu .men_2 {
+    display: none;
+  }
+  .menu {
+    justify-content: center;
+  }
+
+  header h2 {
+    width: 90%;
+    margin: 2rem auto 0rem;
+  }
+
+  .Descubre h3 {
+    width: 90%;
+  }
+  .Descubre p {
+    width: 90%;
+  }
+
+  .cardista {
+    width: 17rem;
+  }
+
+  .menuComida .inf_menu {
+    width: 90%;
+  }
+
+  .listas .cuadrs {
+    max-width: 28rem;
+  }
+
+  .cuadrs .sects {
+    margin: 1rem;
+  }
+
+  .Reconocimiento .punt_2 {
+    width: 95%;
+    text-align: center;
+  }
+
+  .Reconocimiento img {
+    width: 20rem;
+    height: auto;
+  }
+
+  .Reconocimiento .sub_1 img {
+    width: 8rem;
+    height: auto;
+  }
+
+  .Reconocimiento .sub_1 {
+    justify-content: center;
+  }
+
+  .cont_1 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .Contacto .redes {
+    justify-content: center;
+  }
+  footer .Alt {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .cont_2 img {
+    margin: auto;
+    width: 90%;
+  }
+
+  .cont_2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .Alt {
+    margin: auto;
+    padding: 2rem 1rem 5rem;
+  }
+
+
+.Contacto {
+    gap: 2rem;
+    padding: 2rem;
+  
+}
+
+.inf_menu {
+ 
+    width: 100%;
+  
+}
+
+.horario .sec_1 {
+
+    width: 95%;
+    font-size: 1.7rem;
+   
+}
+.horario h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.horario p {
+  font-size: 1.1rem;
+    margin: 1rem 0rem;
+}
+
+.Contacto {
+   
+    padding: 3rem 1rem;
+    margin: 10rem 0rem;
+    
+}
+
+
+.infos .sec2 p{
+ 
+  width: 90%;
+  
+}
+.Reconocimiento {
+    padding: 1rem;
+    margin: 4rem 0rem;
+}
+
+.horario .sub_as1 {
+    flex-wrap: wrap;
+}
+
+.sub_as1 .subss_as1 {
+    width: 100%;
+}
+
+}
